@@ -4,6 +4,15 @@
     {% endblock %}
     
     {% block content %}
+    <div>
+     <a href = {% url 'review list' %}>
+      <button>
+        Review List
+      </button>
+
+     </a>
+
+    </div>
     <form action ="/" method = "POST">
        {% csrf_token %}
        {% for field  in form %}
